@@ -13,7 +13,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b to-gray-900 from-black text-white px-8 py-16"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-t to-gray-900 from-gray-800 text-white px-8 py-16"
     >
       <h2
         className="text-4xl font-bold mb-8 text-orange-400"

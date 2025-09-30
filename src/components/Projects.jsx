@@ -2,7 +2,7 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="min-h-screen bg-black text-white px-8 py-16"
+      className="min-h-screen bg-gradient-to-b from-black to-gray-900 text-white px-8 py-16"
     >
       <h2 className="text-4xl font-bold text-center mb-12 text-orange-400">
         Proyectos
