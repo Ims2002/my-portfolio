@@ -7,6 +7,7 @@ import Techs from "./components/Techs";
 import "./index.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Experience from "./components/Experience";
 
 function App() {
   useEffect(() => {
@@ -18,6 +19,7 @@ function App() {
     <main>
       <Hero />
       <About />
+      <Experience />
       <Techs />
       <Projects />
       <Contact />
