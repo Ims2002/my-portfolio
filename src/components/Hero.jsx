@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left bg-gradient-to-t from-gray-900 to-black text-white px-6"
+      className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left bg-gradient-to-t from-gray-900 to-black text-white px-6 py-20"
     >
       {/* Iconos arriba derecha */}
       <div className="absolute top-6 right-6 flex space-x-4" data-aos="fade-up">
@@ -27,7 +27,7 @@ export default function Hero() {
       </div>
 
       {/* Columna izquierda: texto */}
-      <div className="flex-1 flex flex-col justify-center items-center ml-14" data-aos="fade-right">
+      <div className="flex-1 flex flex-col justify-center items-center text-center" data-aos="fade-right">
         <h1 className="text-5xl font-bold mb-10">
           <span className="text-orange-400">Iván Morell Salmerón</span>
         </h1>
