@@ -26,7 +26,7 @@ export default function Contact() {
         className="text-gray-300 mb-6 text-center"
         data-aos="flip-up"
       >
-        ¿Quieres empezar a trabajar conmigo? Escríbeme un correo o conéctate en mis redes.
+        ¿Quieres que empecemos a trabajar juntos? Escríbeme un correo o conéctate en mis redes :D
       </p>
 
       <div className="flex flex-col md:flex-row gap-6 w-full max-w-lg" data-aos="flip-up">

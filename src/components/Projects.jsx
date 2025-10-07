@@ -71,7 +71,7 @@ export default function Projects() {
         {/* Proyecto 6 */}
         <div className="bg-gray-900 rounded-2xl shadow-md p-6 hover:shadow-lg transition">
           <img 
-            src="./img/Clio.png" 
+            src="./img/CA.jpeg" 
             alt="Clio-s Adventure" 
             className="w-full h-48 object-cover rounded-xl mb-4"
           />

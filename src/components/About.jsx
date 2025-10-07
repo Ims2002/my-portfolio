@@ -7,7 +7,7 @@ export default function About() {
       {/* Marco con imagen */}
       <div className="w-64 h-64 border-4 border-orange-400 rounded-lg flex items-center justify-center overflow-hidden shadow-lg" data-aos="fade-down">
         <img 
-          src="/mi-foto.jpg" // cambia por la ruta real de tu imagen
+          src="./img/PLT.png" // cambia por la ruta real de tu imagen
           alt="Sobre mí"
           className="w-full h-full object-cover"
         />

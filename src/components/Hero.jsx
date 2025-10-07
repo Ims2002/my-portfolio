@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left bg-gradient-to-t from-gray-900 to-black text-white px-6 py-20"
+      className="relative min-h-screen flex flex-col md:flex-row justify-center items-center text-center md:text-left bg-gradient-to-t from-gray-900 to-black text-white px-20 py-20"
     >
       {/* Iconos arriba derecha */}
       <div className="absolute top-6 right-6 flex space-x-4" data-aos="fade-up">
@@ -43,10 +43,10 @@ export default function Hero() {
 
       {/* Columna derecha: marco para la foto */}
       <div className="flex-1 flex justify-center items-center mt-8 md:mt-0" data-aos="zoom-in">
-        <div className="w-64 h-64 border-4 border-orange-400 rounded-2xl shadow-lg overflow-hidden">
+        <div className="w-72 h-72 border-4 border-orange-400 rounded-2xl shadow-lg overflow-hidden">
           <img
-            src="https://via.placeholder.com/300"
-            alt="Tu foto"
+            src="./img/PL.jpeg"
+            alt="Iván Morell"
             className="w-full h-full object-cover"
           />
         </div>
