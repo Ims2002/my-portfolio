@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Iconos arriba derecha */}
       <div className="absolute top-6 right-6 flex space-x-4" data-aos="fade-up">
         <a
-          href="https://www.linkedin.com/in/ivan-morell-b76073245/"
+          href="https://www.linkedin.com/in/ivan-morell-salmeron-b76073245/"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-300 hover:text-blue-500 text-3xl transition-colors"

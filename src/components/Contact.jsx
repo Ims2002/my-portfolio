@@ -40,7 +40,7 @@ export default function Contact() {
 
         {/* Botón LinkedIn */}
         <a
-          href="https://www.linkedin.com/in/ivan-morell-b76073245/"
+          href="https://www.linkedin.com/in/ivan-morell-salmeron-b76073245/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex justify-center items-center px-6 py-3 border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white rounded-xl font-semibold shadow-md transition"
