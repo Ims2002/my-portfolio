@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -11,19 +12,22 @@ import Experience from "./components/Experience";
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false });
-    AOS.refreshHard(); // fuerza refresco de todos los elementos en el DOM
+    AOS.init({ duration: 800, once: true, easing: "ease-out-cubic" });
+    AOS.refreshHard();
   }, []);
 
   return (
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Techs />
-      <Projects />
-      <Contact />
-    </main>
+    <>
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Techs />
+        <Projects />
+        <Contact />
+      </main>
+    </>
   );
 }
 

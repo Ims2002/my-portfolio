@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaLinkedin, FaEnvelope, FaCopy, FaCheck } from "react-icons/fa";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
@@ -7,59 +8,61 @@ export default function Contact() {
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // mensaje se resetea a los 2s
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-t to-gray-900 from-gray-800 text-white px-8 py-16"
+      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white px-8 py-20"
     >
-      <h2
-        className="text-4xl font-bold mb-8 text-orange-400"
-        data-aos="flip-up"
-      >
-        Contacto
-      </h2>
+      <div className="text-center mb-12" data-aos="fade-up">
+        <h2 className="text-5xl font-bold mb-4 text-white">Trabajemos juntos</h2>
+        <p className="text-slate-400 text-lg max-w-md mx-auto leading-relaxed">
+          ¿Quieres que empecemos a trabajar juntos? Escríbeme un correo o conéctate en mis redes :D
+        </p>
+      </div>
 
-      <p
-        className="text-gray-300 mb-6 text-center"
-        data-aos="flip-up"
-      >
-        ¿Quieres que empecemos a trabajar juntos? Escríbeme un correo o conéctate en mis redes :D
-      </p>
-
-      <div className="flex flex-col md:flex-row gap-6 w-full max-w-lg" data-aos="flip-up">
-        {/* Botón Email */}
+      <div className="flex flex-col md:flex-row gap-4 w-full max-w-lg" data-aos="fade-up">
         <a
           href={`mailto:${email}`}
-          className="flex-1 text-center px-6 py-3 bg-orange-500 hover:bg-orange-600 rounded-xl font-semibold shadow-md transition"
+          className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-blue-600 hover:bg-blue-500 rounded-xl font-semibold shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-blue-900/30"
         >
+          <FaEnvelope />
           Envíame un email
         </a>
 
-        {/* Botón LinkedIn */}
         <a
           href="https://www.linkedin.com/in/ivan-morell-salmeron-b76073245/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex justify-center items-center px-6 py-3 border border-blue-700 text-blue-700 hover:bg-blue-700 hover:text-white rounded-xl font-semibold shadow-md transition"
+          className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
         >
+          <FaLinkedin />
           LinkedIn
         </a>
 
-        {/* Copiar Email */}
         <button
           onClick={copyToClipboard}
-          className="flex-1 px-6 py-3 bg-gray-800 hover:bg-gray-700 border border-gray-600 rounded-xl font-semibold shadow-md transition flex justify-center items-center"
+          className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl font-semibold transition-all duration-200 hover:-translate-y-0.5"
         >
           {copied ? (
-            <span className="text-green-400">¡Copiado!</span>
+            <>
+              <FaCheck className="text-green-400" />
+              <span className="text-green-400">¡Copiado!</span>
+            </>
           ) : (
-            <span className="text-gray-300">Copiar email</span>
+            <>
+              <FaCopy />
+              <span>Copiar email</span>
+            </>
           )}
         </button>
       </div>
+
+      <p className="mt-16 text-slate-600 text-sm">
+        © {new Date().getFullYear()} Iván Morell Salmerón · Diseño y desarrollo propios
+      </p>
     </section>
   );
 }

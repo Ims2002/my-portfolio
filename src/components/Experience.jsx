@@ -41,36 +41,32 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="min-h-screen bg-gradient-to-b from-black via-gray-900 to-black text-white px-8 py-16"
+      className="min-h-screen bg-slate-50 px-8 md:px-20 py-20"
     >
-      <h2
-        className="text-4xl font-bold mb-12 text-orange-400 flex justify-center items-center"
-        data-aos="flip-up"
-      >
-        Experiencia
-      </h2>
+      <div className="flex items-center gap-3 mb-14 justify-center" data-aos="flip-up">
+        <div className="w-1 h-10 bg-blue-700 rounded-full"></div>
+        <h2 className="text-4xl font-bold text-slate-900">Experiencia</h2>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 justify-items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="group relative border-2 border-orange-400 rounded-lg p-6 flex flex-col items-center hover:scale-105 transition-transform duration-300 bg-black max-w-sm w-full"
-            data-aos="fade-down"
+            className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-md hover:border-blue-200 hover:-translate-y-1 transition-all duration-300 flex flex-col"
+            data-aos="fade-up"
           >
-            {/* Texto */}
-            <h3 className="text-xl font-bold text-orange-400 mb-1 text-center">
-              {exp.title}
-            </h3>
-            <p className="text-gray-300 font-semibold text-center mb-1">
-              {exp.company} · {exp.type}
+            <div className="flex items-start justify-between mb-3 gap-2">
+              <h3 className="text-lg font-bold text-slate-900 leading-tight">{exp.title}</h3>
+              <span className="text-xs font-medium bg-blue-100 text-blue-700 px-2.5 py-1 rounded-full whitespace-nowrap flex-shrink-0">
+                {exp.type}
+              </span>
+            </div>
+            <p className="text-blue-700 font-semibold mb-1 text-sm">{exp.company}</p>
+            <p className="text-slate-400 text-xs mb-0.5">{exp.period}</p>
+            <p className="text-slate-400 text-xs mb-4">{exp.location}</p>
+            <p className="text-slate-600 text-sm leading-relaxed mt-auto pt-3 border-t border-slate-100">
+              {exp.description}
             </p>
-            <p className="text-gray-400 text-sm text-center mb-2">
-              {exp.period}
-            </p>
-            <p className="text-gray-400 text-sm text-center mb-4">
-              {exp.location}
-            </p>
-            <p className="text-gray-300 text-center">{exp.description}</p>
           </div>
         ))}
       </div>
