@@ -9,15 +9,16 @@ const institutions = [
     ],
   },
   {
-    name: "Evolve Academy",
-    period: "2026",
-    programs: ["Máster en Data Analytics"],
-  },
-  {
     name: "The Power Education",
     period: "2025",
     programs: ["Data Analytics"],
   },
+  {
+    name: "Evolve Academy",
+    period: "2026",
+    programs: ["Máster en Data Analytics"],
+  },
+  
 ];
 
 export default function Education() {
