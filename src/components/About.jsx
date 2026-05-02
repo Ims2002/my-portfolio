@@ -44,7 +44,7 @@ export default function About() {
           <p className="text-slate-500 italic text-sm mb-1">
             Mi objetivo es seguir creciendo en el sector tecnológico y afrontar nuevos retos, siempre con la convicción de que:
           </p>
-          <p className="text-blue-800 font-semibold text-lg">"El mundo es cómo lo programamos."</p>
+          <p className="text-blue-800 font-semibold text-lg">"Mi pasión son los datos y la gestión de la información."</p>
         </blockquote>
       </div>
     </section>

@@ -17,14 +17,14 @@ export default function Hero() {
         </h1>
 
         <p className="text-xl text-slate-500 mb-6 font-medium">
-          Desarrollador Web · Multiplataforma · Fullstack · Data Analyst
+          Data Analyst · Desarrollador Web · Multiplataforma
         </p>
 
         <p className="text-base text-slate-500 mb-10 max-w-lg leading-relaxed">
           Soy un Desarrollador FullStack con un año de experiencia, apasionado por crear aplicaciones web y móviles
-          útiles y escalables. Actualmente estoy ampliando mis conocimientos en Data Analytics en The Power
-          Education, además curso un Máster en Data Science en Evolve Academy,
-          siempre busco unir el desarrollo con el poder de los datos para dar vida a soluciones más completas e inteligentes
+          útiles y escalables. Actualmente estoy ampliando mis conocimientos en <b>Data Analytics en The Power
+          Education</b>, además curso un <b>Máster en Data Science en Evolve Academy</b>,
+          siempre busco unir el desarrollo con el poder de los datos para dar vida a soluciones más completas 
           que aporten valor a los proyectos de los que formo parte.
         </p>
 

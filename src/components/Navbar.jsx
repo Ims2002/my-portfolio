@@ -10,6 +10,7 @@ export default function Navbar() {
         <div className="hidden md:flex gap-8 text-sm font-medium text-slate-500">
           <a href="#about" className="hover:text-blue-700 transition-colors">Sobre mí</a>
           <a href="#experience" className="hover:text-blue-700 transition-colors">Experiencia</a>
+          <a href="#education" className="hover:text-blue-700 transition-colors">Formación</a>
           <a href="#techs" className="hover:text-blue-700 transition-colors">Tecnologías</a>
           <a href="#projects" className="hover:text-blue-700 transition-colors">Proyectos</a>
           <a href="#contact" className="hover:text-blue-700 transition-colors">Contacto</a>
@@ -19,7 +20,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/ivan-morell-salmeron-b76073245/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-blue-700 text-xl transition-colors"
+            className="text-slate-400 hover:text-blue-700 text-2xl transition-colors"
           >
             <FaLinkedin />
           </a>
@@ -27,7 +28,7 @@ export default function Navbar() {
             href="https://github.com/Ims2002"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-400 hover:text-slate-900 text-xl transition-colors"
+            className="text-slate-400 hover:text-slate-900 text-2xl transition-colors"
           >
             <FaGithub />
           </a>
