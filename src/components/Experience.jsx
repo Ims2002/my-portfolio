@@ -10,13 +10,22 @@ export default function Experience() {
         "Desarrollo de un CRM en Quasar consultando a una API con backend PHP en Velneo. PHP, JavaScript entre otras tecnologías.",
     },
     {
-      title: "Programador Full Stack",
+      title: "Android Developer",
       company: "Ayuntamiento El Poble Nou de Benitatxell",
       type: "Jornada completa",
       period: "feb. 2023 - jun. 2023 · 4 meses",
       location: "Benitachell, Comunidad Valenciana, España · Presencial",
       description:
         "Desarrollo de una aplicación móvil para la gestión de RSU usando Android Studio, SQL entre otras tecnologías.",
+    },
+    {
+      title: "Comercial de Seguros",
+      company: "Santalucía Seguros",
+      type: "Jornada completa",
+      period: "oct. 2024 - nov. 2024 · 2 meses",
+      location: "España · Presencial",
+      description:
+        "Comercialización de productos de seguros, atención al cliente y gestión de cartera.",
     },
     {
       title: "Repartidor de Correos",
